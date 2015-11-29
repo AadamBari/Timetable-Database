@@ -158,13 +158,24 @@ INSERT INTO Module_Time (Duration, Start_Time, CRN, RoomNo)
 VALUES ('1', '1600', '37729273', '2056');
 
 
+commit;
 
+--SELECT * FROM MODULE;
+
+--GRANT select, update, insert on MODULE to ABARI;
+
+
+
+/*
 CREATE USER coordinator FOR staff;
 CREATE USER buildingManager FOR staff;
 CREATE USER technician FOR staff;
 CREATE USER roomCoordinator FOR staff;
 CREATE USER lecturer FOR staff;
 CREATE USER schoolCoordinator FOR staff;
+
+
+
 
 grant select, update, insert, drop on ROOM to coordinator;
 
@@ -177,3 +188,5 @@ grant select, update, insert on ROOM to roomCoordinator;
 grant select, update on MODULE to lecturer;
 
 grant select, update on Module_Time to schoolCoordinator;
+
+*/
